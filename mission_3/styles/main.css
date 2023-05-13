@@ -1,0 +1,75 @@
+body {
+  padding: 10px 10%;
+}
+
+h1,
+h2,
+ul {
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+input {
+  height: 40px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+li {
+  padding: 2px;
+  cursor: pointer;
+}
+
+#search-result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+}
+
+.performance {
+  margin: 5px 5px 0 0;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+}
+
+.performance__poster {
+  object-fit: cover;
+  width: 100%;
+}
+
+.musician__container {
+  margin-top: 10px;
+}
+
+.musician__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.musician__item {
+  object-fit: cover;
+  width: 100%;
+}
+
+.musician__list__item {
+  display: inline;
+  background-color: #e7e7e7;
+  margin: 2px 2px 0 0;
+  padding: 3px;
+  border-radius: 3px;
+}
