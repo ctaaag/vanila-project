@@ -1,0 +1,124 @@
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.container .todo-container {
+  padding: 2em;
+  flex: 75%;
+  height: 80%;
+}
+.todo-container #todo-form {
+  width: 100%;
+  height: 3.5em;
+  margin-bottom: 1.3em;
+}
+.todo-container .todo-input {
+  font-size: 1.2em;
+  padding: 0.6em;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(175, 226, 255, 0.466);
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  margin-right: 0.8em;
+}
+.todo-container button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  transition: 0.4s;
+}
+.todo-container button:hover {
+  transform: scale(1.1);
+}
+.todo-container #todo-form button {
+  font-size: 1em;
+  height: 100%;
+}
+.todo-container #todo-list {
+  position: relative;
+  padding: 1.2em;
+  height: 90%;
+  overflow-y: scroll;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.todo-container span {
+  margin: 0.3em 0.5em;
+  font-size: 1.1em;
+}
+.todo-container .todo_text:hover {
+  cursor: pointer;
+}
+.todo-container .todo_strike {
+  text-decoration: line-through;
+}
+.todo-container #todo-list .todoCount {
+  position: absolute;
+  top: 10;
+  right: 10;
+  display: inline-block;
+  color: rgb(88, 88, 88);
+  font-size: 0.9em;
+}
+
+#user-list {
+  padding: 1.6em;
+  flex: 25%;
+  width: 80%;
+  height: 90%;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+#user-list h2 {
+  font-size: 1.3em;
+}
+#user-list .todo-users {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#user-list .todo-users li {
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  width: 48%;
+  margin: 0.2em;
+  padding: 0.3em 0;
+  background-color: rgba(255, 242, 201, 0.664);
+  border-radius: 5px;
+  color: rgba(82, 82, 82, 0.795);
+  transition: 0.2s;
+}
+#user-list .todo-users li:hover {
+  background-color: rgba(175, 226, 255, 0.932);
+}
+
+.loading_overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+}
+.loading_img {
+  position: absolute;
+  top: 25%;
+  left: 38%;
+  border-radius: 10px;
+}
